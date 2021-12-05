@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Ubuntu";
+}
+
+a {
+  text-decoration: none;
+}
+
+.menu {
+  background: #254EDB;
+  display: flex;
+  width: 100vw;
+  height: 5vh;
+  align-items: center;
+  padding: 5px;
+  justify-content: space-between;
+  font-weight: bold;
+}
+.menu ul li {
+  padding: 15px;
+  display: inline-block;
+}
+.menu ul li a {
+  color: #fff;
+  padding: 15px;
+}
+.menu .session {
+  color: #fff;
+  text-decoration: none;
+  padding: 15px;
+  margin-left: 50px;
+  margin-right: 20px;
+}
+.menu a:hover, .menu .session:hover {
+  transition: 0.3s all;
+  background: #fff;
+  color: #000;
+  border-radius: 10px;
+}
+
+.information_index {
+  width: 100vw;
+  height: 95vh;
+  background: url("../images/hospital.jpg");
+  background-size: cover;
+  position: relative;
+}
+.information_index .tittle {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -40%);
+  background: #254EDB;
+  color: #fff;
+  padding: 3%;
+  border-radius: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */

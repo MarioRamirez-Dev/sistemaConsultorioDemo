@@ -1,0 +1,38 @@
+$colorTexto: #fff;
+
+.menu{
+    background: $colorPrincipal;
+    display: flex;
+    width: 100vw;
+    height: 5vh;
+    align-items: center;
+    padding: 5px;
+    justify-content: space-between;
+    font-weight: bold;
+
+    ul{
+        li{
+            padding: 15px;
+            display: inline-block;
+            a{
+                color: $colorTexto;
+                padding: 15px;
+            }
+        }
+        
+    }
+    .session{
+        color: $colorTexto;
+        text-decoration: none;
+        padding: 15px;
+        margin-left: 50px;
+        margin-right: 20px;
+    }
+
+    a:hover, .session:hover{
+        transition: .3s all;
+        background: $colorTexto;
+        color: #000;
+        border-radius: 10px;
+    }
+}
