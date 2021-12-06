@@ -1,0 +1,67 @@
+
+.login{
+    background: $colorPrincipal;
+    border-radius: 20px;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 60vw;
+    height: 60vh;
+    align-items: center;
+    justify-content: center;
+    box-shadow:$sombra;
+}
+
+.login_left{
+    width: 50%;
+    height: 100%;
+    padding: 30px;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.login_right{
+    width: 60%;
+    height: 100%;
+    border-radius: 20px;
+    background: $bg_login;
+    color: $colorPrincipal;
+    form{
+        padding: 30px 30px 15px 30px;
+        text-align: center;
+        H1{
+            font-size: 3rem;
+            text-align: center;
+        }
+        input{
+            padding: 5px;
+            background: inherit;
+            outline: none;
+            margin: 15px;
+            background: inherit;
+            border-style: solid;
+            border-color: $bg_login $bg_login $colorPrincipal $bg_login;
+            color: $colorPrincipal;
+        }
+        .btnIniciarSesion{
+            width: 60%;
+            border: none;
+            cursor: pointer;
+            transition: .5s;
+            border-radius: 20px;
+            background: $colorPrincipal;
+            padding: 15px 50px;
+            color: $bg_login;
+            font-size: 1em;
+        }
+        a{
+            color: $colorPrincipal;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+    }
+}
