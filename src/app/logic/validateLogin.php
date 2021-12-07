@@ -11,11 +11,11 @@
     // $password_err = "";
     
         //SQL
-        $sql = "SELECT * FROM tbl_users WHERE user = '$username' and password = '$password' ";
+        $sql = "SELECT * FROM tbl_users WHERE email = '$username' and password = '$password' ";
         $process = mysqli_query($conection,$sql);
         if ($result = mysqli_fetch_array($process)){
             $_SESSION['username'] = $username;
-            header("location:../.php");
+            header("location:../dates.php");
         }else{
             $_SESSION['logueado'] = "error";
             header("location:../login.php");
