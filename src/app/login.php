@@ -3,13 +3,16 @@
     $error = "";
     session_start();
     if(!empty($_SESSION['username'])){
-        header("location:dates.php");
+        header("location:profile.php");
     }
     //Mostrar mensaje de error
     if(!empty($_SESSION['logueado'])){
         $error = "Usuario y/o Contraseña incorrectos";
     }
+    
+
 ?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -24,10 +27,10 @@
     <h1 class="error_login"><?php echo $error;?></h1>
     <nav class="menu">
         <ul>
-            <li><a href="../../index.html"><i class="fas fa-home"></i> Inicio</a></li>
-            <li><a href=""><i class="fas fa-user-friends"></i> Sobre Nosotros</a></li>
-            <li><a href=""><i class="fas fa-inbox"></i> Contacto</a></li>
-            <li><a href=""><i class="fas fa-calendar-alt"></i> Cita</a></li>
+            <li><a href="../../index.html">Inicio</a></li>
+            <li><a href=""> Sobre Nosotros</a></li>
+            <li><a href=""> Contacto</a></li>
+            <li><a href=""> Cita</a></li>
         </ul>
         <!-- <a href="src/app/views/login.html" class="session"><i class="fas fa-user"></i> Iniciar Sesión </a> -->
     </nav>

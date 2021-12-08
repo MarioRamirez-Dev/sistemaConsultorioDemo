@@ -8,7 +8,8 @@ $colorTexto: #fff;
     align-items: center;
     padding: 5px;
     justify-content: space-between;
-    font-weight: bold;
+    box-shadow: $sombra;
+    border-radius: 0 0 10px 0px;
     ul{
         li{
             padding: 15px;
@@ -30,8 +31,6 @@ $colorTexto: #fff;
 
     a:hover, .session:hover{
         transition: .3s all;
-        background: $bg_login;
-        color: $colorPrincipal;
-        border-radius: 10px;
+        text-decoration: overline;
     }
 }

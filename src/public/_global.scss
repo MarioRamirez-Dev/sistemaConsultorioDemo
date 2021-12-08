@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
 
 $colorPrincipal: #2F3A56;
-$bg_login: #D8E8E8;
+$bg_login: #f5f5f5;
 $sombra:  5px 5px 20px #222;
 
 
@@ -16,10 +16,6 @@ $sombra:  5px 5px 20px #222;
 a{
     text-decoration: none;
 }
-
-/*TEMPORAL*/
-body{
-    background: url("../images/hospital.jpg");
-    background-size: cover;
+ul{
+    list-style: none;
 }
-/*+-+-+-+-+-+-+-+-+-+-+*/

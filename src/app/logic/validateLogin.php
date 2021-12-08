@@ -15,7 +15,7 @@
         $process = mysqli_query($conection,$sql);
         if ($result = mysqli_fetch_array($process)){
             $_SESSION['username'] = $username;
-            header("location:../dates.php");
+            header("location:../profile.php");
         }else{
             $_SESSION['logueado'] = "error";
             header("location:../login.php");
