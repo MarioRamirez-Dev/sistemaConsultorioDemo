@@ -12,12 +12,21 @@
     
         //SQL
         $sql = "SELECT * FROM tbl_users WHERE email = '$username' and password = '$password' ";
+         
         $process = mysqli_query($conection,$sql);
+        
+        $_SESSION['nombre'] = "lio";
+
         if ($result = mysqli_fetch_array($process)){
-            $_SESSION['username'] = $username;
+            $fila = mysqli_fetch_array($process);
+            $_SESSION['user'] = $username;
+            $nombre = $fila['name'];
             header("location:../profile.php");
         }else{
             $_SESSION['logueado'] = "error";
             header("location:../login.php");
-        }      
+        }    
+        
+        
+        
 ?>
